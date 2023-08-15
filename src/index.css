@@ -4,22 +4,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
   background-color: #d1faff;
   font-family: "Poppins", sans-serif;
 }
 
 #root {
-  height: 100%;
-  width: 100%;
   display: grid;
-  justify-content: center;
-  align-content: center;
+  min-height: 100vh;
+  place-content: center;
 }
 
 .App {
-  max-width: 400px;
+  width: min(400px, 70vw);
+
   text-align: center;
   padding: 2rem;
   border: 0 solid #e5e7eb;
@@ -54,7 +51,8 @@ select {
   border: 1px solid #bbb;
   font-size: 1rem;
   display: inline-block;
-  width: auto;
+  text-align: center;
+  width: 8rem;
   vertical-align: middle;
 }
 
@@ -94,7 +92,10 @@ select:focus {
   border-style: solid;
   border-color: #fff;
   padding-top: 1rem;
-  text-align: center;
   color: #fff;
   text-align: justify;
+}
+
+.error-message {
+  text-align: center;
 }

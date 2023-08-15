@@ -27,7 +27,6 @@ const myHook = (): MainType => {
       return;
     }
     console.log(dataDay, dataMonth, dataYear);
-
     return setShowData(true);
   };
 
