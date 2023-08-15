@@ -17,16 +17,17 @@ const ageFromDateOfBirthday: MyFunction = (coreData, callback) => {
   let age: number = currentDate.getFullYear() - birthDate.getFullYear();
   let months: number = currentDate.getMonth() - birthDate.getMonth();
   let days: number = birthDate.getDate() - currentDate.getDate();
+  let differenceDays: number = currentDate.getDate() - birthDate.getDate();
 
   if (callback(months, currentDate, birthDate)) {
     // se o mês for menor que 0(número negativo) ou mês for igual a 0 e dia atual for menor que o dia do aniversário
     age--;
     days += +31;
     months += 12;
-    return `Você tem ${age} anos de idade, ${months} meses, e restam ${days} dias para o seu aniversário!`;
+    return `Você tem ${age} anos de idade, ${months} mês(s), ${differenceDays} dias e restam ${days} dias para o seu aniversário!`;
   }
 
-  return `Você tem: ${age} anos de idade!`;
+  return `Você tem ${age} anos de idade, ${months} mês(s), ${differenceDays} dias!`;
 };
 
 export { ageFromDateOfBirthday, verifyBirthDate };
