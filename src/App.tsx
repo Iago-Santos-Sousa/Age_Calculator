@@ -3,10 +3,7 @@ import DaysOptions from "./components/DaysOptions";
 import MonthsOptions from "./components/MonthsOptions";
 import YearsOptions from "./components/YearsOptions";
 import myHook from "./hooks/myHook";
-import {
-  verifyBirthDate,
-  ageFromDateOfBirthday,
-} from "./logic/ageFromDateOfBirthday";
+import { ageFromDateOfBirthday } from "./logic/ageFromDateOfBirthday";
 import MyContext from "./context/MyContext";
 import MainType from "./types/myTypes";
 
@@ -31,7 +28,7 @@ function App() {
     messageError,
   };
 
-  const age: string = ageFromDateOfBirthday(coreData, verifyBirthDate);
+  const age: string = ageFromDateOfBirthday(coreData);
 
   return (
     <MyContext.Provider value={providerValues}>

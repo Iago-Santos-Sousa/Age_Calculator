@@ -93,9 +93,5 @@ select:focus {
   border-color: #fff;
   padding-top: 1rem;
   color: #fff;
-  text-align: justify;
-}
-
-.error-message {
   text-align: center;
 }

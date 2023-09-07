@@ -12,12 +12,6 @@ type MainType = {
   messageError: string | null;
 };
 
-export type VerifyBirthDate = (
-  months: number,
-  currentDate: Date,
-  birthDate: Date
-) => boolean;
-
 export type CoreData = {
   dataDay: number | null;
   dataMonth: number | null;
@@ -27,9 +21,9 @@ export type CoreData = {
 export type CallBack = (
   months: number,
   currentDate: Date,
-  birthDate: Date
+  birthDate: Date,
 ) => boolean;
 
-export type MyFunction = (coreData: CoreData, callback: CallBack) => string;
+export type MyFunction = (coreData: CoreData) => string;
 
 export default MainType;
