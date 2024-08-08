@@ -1,4 +1,4 @@
-# Calculadora de idade 
+# Age Calculator 
 
 ## 📷 Screenshot
 ![Screenshot](https://github.com/Iago-Santos-Sousa/Age_Calculator/blob/main/Captura%20de%20tela%202024-08-07%20215106.png?raw=true)
